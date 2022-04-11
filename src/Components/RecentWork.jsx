@@ -9,7 +9,7 @@ import '../App.css';
 
 export default function RecentWork ({ props }) {
     return (
-        <div>
+        <div className='experience-container'>
             <p className='experience-title'>Recent Work</p>
 
             <div className="work-items-row">
@@ -67,8 +67,9 @@ export default function RecentWork ({ props }) {
                     <p className='work-description'>Currently innactive on the apple & google play store.</p>
                 </div>
             </div>
-            <a href='#'>
-                <button className='action'>Back to top</button></a>
+            <div className='button-container'>
+                <a href='#'><button className='action'>Back to top</button></a>
+            </div>
             <div className='bar' />
         </div>
     )

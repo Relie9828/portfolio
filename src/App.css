@@ -65,7 +65,7 @@
   }
 
   .intro {
-    text-align: end;
+    text-align: right;
     color: white;
     font-size: 14pt;
     color: rgba(255, 254, 255, 0.8);
@@ -118,6 +118,76 @@
     font-size: 10px;
   }
 
+  @media screen and (max-width: 1383px) {
+    .first-content{
+      transition: .3s ease-in-out;
+      width: 30%;
+    }
+  }
+
+  @media screen and (max-width: 1297px) {
+    .first-content{
+      transition: .3s ease-in-out;
+      width: 25%;
+    }
+
+    .inner {
+      align-items: center;
+      transition: .3s ease-in-out;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    .intro {
+      font-size: 13pt;
+      transition: .3s ease-in-out;
+      text-align: center;
+      width: 100%;
+    }
+
+    .icon-content {
+      align-self: center;
+      transition: .3s ease-in-out;
+    }
+  }
+
+  @media screen and (max-width: 1191px) {
+    .body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .first-content{
+      height: 25vh;
+      position: relative;
+      justify-content: center;
+      display: flex;
+      width: 100vw;
+      background-image: url('../src/images/sunset.jpg');
+      background-size: 100% 15rem;
+    }
+
+    .inner {
+      align-items: center;
+      transition: .3s ease-in-out;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    .intro {
+      font-size: 13pt;
+      transition: .3s ease-in-out;
+      text-align: center;
+      width: 375px;
+    }
+
+    .icon-container {
+      display: none;
+    }
+  }
+
   /* summary */
 
   .second-content{
@@ -144,7 +214,7 @@
   .summary-content {
     color: rgba(0, 0, 0, 0.5);
     line-height: 1.80rem;
-    width: 82%;
+    width: 720px;
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 4rem;
@@ -157,7 +227,7 @@
 
   .action {
     border: solid rgba(0, 0, 0, 0.07) 2.5px;
-    border-radius: 5px;
+    border-radius: 7px;
     width: 150px;
     height: 50px;
     padding: 10px;
@@ -258,8 +328,72 @@
   }
 
   .bar {
-    width: 82%;
+    width: 720px;
     height: 10px;
     margin-bottom: 30px;
     border-bottom: solid 1.4px rgba(0, 0, 0, 0.08);
+  }
+
+  /* @media queries */
+  @media screen and (max-width: 1383px) {
+    .second-content{
+      width: 70%;
+      transition: .3s ease-in-out;
+    }
+  }
+
+  @media screen and (max-width: 1297px) {
+    .second-content{
+      width: 75%;
+      transition: .3s ease-in-out;
+    }
+  }
+
+  @media screen and (max-width: 1191px) {
+    .second-content{
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .summary-title-box {
+      width: 720px;
+    }
+
+    .summary-container {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .experience-title {
+      font-size: 17pt;
+      color: rgba(0, 0, 0, 0.6);
+      width: 720px;
+    }
+
+    .experience-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .work-items-row {
+      align-self: center;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .work-item {
+      margin: 0px;
+    }
+
+    .button-container {
+      width: 720px;
+    }
   }
