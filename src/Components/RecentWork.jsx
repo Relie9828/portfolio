@@ -70,7 +70,6 @@ export default function RecentWork ({ props }) {
             <div className='button-container'>
                 <a href='#'><button className='action'>Back to top</button></a>
             </div>
-            <div className='bar' />
         </div>
     )
 }

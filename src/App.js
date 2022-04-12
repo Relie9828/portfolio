@@ -6,17 +6,8 @@ import SideContent from './Components/SideContent';
 export default function App ({ props }) {
     return (
         <div className='body'>
-            <div className='first-content'>
-                <SideContent />
-            </div>
-
-            <div className='main-content'>
-                <div className='second-content'>
-                    <div className='contents'>
-                        <Summary />
-                    </div>
-                </div>
-            </div>
+            <SideContent />
+            <Summary />
         </div>
     )
 }
