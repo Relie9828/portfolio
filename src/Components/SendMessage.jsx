@@ -22,7 +22,7 @@ export default function SendMessage ({ props }) {
                                 <textarea name="message" id="message" placeholder="Message"></textarea>
                             </div>
                         </form>
-                        <button className="action" type="submit" >Message</button>
+                        <button className="action-3" type="submit" >Message</button>
                     </div>
                     <div className="info-container">
                         <div className="info-content">
