@@ -208,7 +208,7 @@
     justify-content: center;
     align-self: flex-end;
     align-items: center;
-    width: 65%;
+    width: 65vw;
   }
 
   .contents {
@@ -351,13 +351,7 @@
     color: rgba(0, 0, 0, 0.5);
   }
 
-  .bar {
-    width: 720px;
-    height: 10px;
-    margin-bottom: 30px;
-    border-bottom: solid 1.4px rgba(0, 0, 0, 0.08);
-  }
-
+  /* Send message content */
   .send-message-container {
     color: rgba(0, 0, 0, 0.5);
     line-height: 1.80rem;
