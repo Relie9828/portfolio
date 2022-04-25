@@ -1,6 +1,7 @@
 import React, {useCallback, useState, useContext, useEffect, useRef} from 'react';
 import RecentWork from './RecentWork';
 import SendMessage from './SendMessage';
+import TechnologiesUsed from './TechnologiesUsed';
 
 export default function Summary ({ props }) {
     return (
@@ -19,6 +20,7 @@ export default function Summary ({ props }) {
                         </div>
                         <RecentWork />
                         <SendMessage />
+                        <TechnologiesUsed />
                     </div>
                 </div>
             </div>

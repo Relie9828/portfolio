@@ -30,12 +30,21 @@
     scrollbar-width: none;
   }
 
+  .body { 
+    margin: auto; 
+    max-width: 1450px; 
+    align-items: center; 
+    justify-content: center; 
+    align-self: 'center'; 
+  }
+
   .main-content {
     width: 100%;
     align-items: center;
     justify-content: flex-end;
     flex-direction: row;
     display: flex;
+    transition: .3s ease-in-out;
   }
 
 
@@ -47,10 +56,12 @@
     justify-content: center;
     display: flex;
     width: 35%;
-    object-fit: fill;
-    background-image: url('../src/images/bg.jpg');
+    max-width: 490px;
+    object-fit: cover;
+    background-image: url('../src/images/woods.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100vh;
+    transition: .3s ease-in-out;
   }
 
   .header {
@@ -75,6 +86,7 @@
     height: 85px;
     border-radius: 50%;
     object-fit: cover;
+    transition: .3s ease-in-out;
   }
 
   .intro {
@@ -93,6 +105,7 @@
     padding-right: 65px;
     padding-left: 65px;
     flex-direction: column;
+    transition: .3s ease-in-out;
   }
 
   .icon-content {
@@ -104,6 +117,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    transition: .3s ease-in-out;
   }
 
   .icon-1 {
@@ -115,6 +129,7 @@
     align-self: flex-end;
     display: flex;
     color: rgba(255, 254, 255, 0.5);
+    transition: .3s ease-in-out;
   }
 
   .footer-details, li {
@@ -131,76 +146,6 @@
     font-size: 10px;
   }
 
-  @media screen and (max-width: 1383px) {
-    .first-content{
-      transition: .3s ease-in-out;
-      width: 30%;
-    }
-  }
-
-  @media screen and (max-width: 1297px) {
-    .first-content{
-      transition: .3s ease-in-out;
-      width: 25%;
-    }
-
-    .inner {
-      align-items: center;
-      transition: .3s ease-in-out;
-      padding-right: 10px;
-      padding-left: 10px;
-    }
-
-    .intro {
-      font-size: 13pt;
-      transition: .3s ease-in-out;
-      text-align: center;
-      width: 100%;
-    }
-
-    .icon-content {
-      align-self: center;
-      transition: .3s ease-in-out;
-    }
-  }
-
-  @media screen and (max-width: 1191px) {
-    .body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    .first-content{
-      height: 43vh;
-      position: relative;
-      justify-content: center;
-      display: flex;
-      width: 100vw;
-      background-size: 100% 55rem;
-      background-position-y: center;
-    }
-
-    .inner {
-      align-items: center;
-      transition: .3s ease-in-out;
-      padding-right: 10px;
-      padding-left: 10px;
-    }
-
-    .intro {
-      font-size: 13pt;
-      transition: .3s ease-in-out;
-      text-align: center;
-      width: 375px;
-    }
-
-    .icon-container {
-      display: none;
-    }
-  }
-
   /* summary */
 
   .second-content{
@@ -209,14 +154,18 @@
     align-self: flex-end;
     align-items: center;
     width: 65vw;
+    transition: .3s ease-in-out;
+    max-width: 910px;
   }
 
   .contents {
     width: 88%;
+    transition: .3s ease-in-out;
   }
 
   .summary-container {
     margin-top: 8.3rem;
+    transition: .3s ease-in-out;
   }
 
   .summary-title {
@@ -249,13 +198,13 @@
     background-color: transparent;
     cursor: pointer;
     margin-bottom: 4rem;
+    transition: 0.3s ease-in;
   }
 
   .action:hover {
     color: black;
     border: solid rgba(0, 0, 0, .60) 2.5px;
     transition: 0.3s ease-in;
-    transition: 0.3s ease-out;
   }
 
   /* Recent work */
@@ -268,6 +217,7 @@
     font-weight: 500;
     margin-bottom: 4rem;
     border-bottom: solid 1.4px rgba(0, 0, 0, 0.08);
+    transition: .3s ease-in-out;
   }
 
   .experience-title {
@@ -281,6 +231,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 115%;
+    transition: .3s ease-in-out;
   }
 
   .work-item {
@@ -291,11 +242,13 @@
     margin-bottom: 1rem;
     margin-right: 5rem;
     width: 38%;
+    transition: .3s ease-in-out;
   }
 
   .thumbnail-container {
     display: flex;
     align-items: center;
+    transition: .3s ease-in-out;
   }
 
   .overlay {
@@ -306,6 +259,7 @@
     border-radius: 10px;
     height: 200px;
     background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in;
     width: 100%;
     cursor: pointer;
     opacity: 0;
@@ -314,7 +268,6 @@
   .overlay:hover {
     opacity: 1;
     transition: 0.3s ease-in;
-    transition: 0.3s ease-out;
   }
 
   .overlay-btn {
@@ -336,6 +289,7 @@
     object-fit: cover;
     width: 100%;
     height: 200px;
+    transition: .3s ease-in-out;
   }
 
   .work-title {
@@ -360,6 +314,7 @@
     font-weight: 500;
     margin-bottom: 4rem;
     border-bottom: solid 1.4px rgba(0, 0, 0, 0.08);
+    transition: .3s ease-in-out;
   }
 
   .send-message-content {
@@ -367,6 +322,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    transition: .3s ease-in-out;
   }
 
   .send-message-title {
@@ -385,6 +341,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    transition: .3s ease-in-out;
   }
 
   .text-input-content {
@@ -393,6 +350,7 @@
     flex-direction: column;
     justify-content: center;
     margin-bottom: 20px;
+    transition: .3s ease-in-out;
   }
 
   .name-email {
@@ -411,6 +369,7 @@
     padding: 14px;
     background-color: #EEEDEC;
     border-radius: 5px;
+    transition: .3s ease-in-out;
   }
 
   #message {
@@ -422,6 +381,7 @@
     padding: 8px;
     resize: none;
     border: none;
+    transition: .3s ease-in-out;
   }
 
   .action-3 {
@@ -435,6 +395,13 @@
     background-color: transparent;
     cursor: pointer;
     margin-bottom: 4rem;
+    transition: 0.3s ease-in;
+  }
+
+  .action-3:hover {
+    color: black;
+    border: solid rgba(0, 0, 0, .60) 2.5px;
+    transition: 0.3s ease-in;
   }
 
   .address-content {
@@ -464,200 +431,377 @@
   }
 
   .email {
+    transition: 0.3s ease-in;
     color: rgba(0, 0, 0, 0.5);
     border-bottom: 1px dotted;
   }
 
   .email:hover {
+    transition: 0.3s ease-in;
     color: rgba(0, 0, 0, .7);
     border-bottom: 1px dotted rgba(255, 255, 255, 0);
   }
 
-  /* @media queries */
-  @media screen and (max-width: 1383px) {
-    .second-content{
-      width: 70%;
-      transition: .3s ease-in-out;
-    }
+  /* Technologies used */
+  .tech-container {
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.80rem;
+    width: 82%;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 2rem;
   }
 
-  @media screen and (max-width: 1297px) {
-    .second-content{
-      width: 75%;
-      transition: .3s ease-in-out;
-    }
+  .tech-title {
+    font-size: 17pt;
+    color: rgba(0, 0, 0, 0.6);
   }
 
-  @media screen and (max-width: 1191px) {
-    .second-content{
-      display: flex;
-      justify-content: center;
-      align-self: center;
-      align-items: center;
-      width: 100%;
+  #icons {
+    font-size: 35px;
+    padding: 7px;
+  }
+
+  .icons-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .expo-logo {
+    width: 55px;
+    height: 55px;
+  }
+
+
+    /* @media queries */
+    @media screen and (max-width: 1383px) {
+      .first-content{
+        transition: .3s ease-in-out;
+        width: 35%;
+      }
+
+      .second-content{
+        width: 65%;
+        transition: .3s ease-in-out;
+      }
     }
 
-    .summary-container {
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    @media screen and (max-width: 1297px) {
+      .first-content{
+        transition: .3s ease-in-out;
+        width: 30%;
+        max-width: 1600px;
+      }
+
+      .inner {
+        align-items: center;
+        transition: .3s ease-in-out;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+
+      .intro {
+        font-size: 13pt;
+        transition: .3s ease-in-out;
+        text-align: center;
+        width: 100%;
+      }
+
+      .icon-content {
+        align-self: center;
+        transition: .3s ease-in-out;
+      }
+
+      .second-content{
+        width: 70%;
+        transition: .3s ease-in-out;
+      }
     }
 
-    .experience-title {
-      font-size: 17pt;
-      color: rgba(0, 0, 0, 0.6);
-      align-self: flex-start;
+
+
+    @media screen and (max-width: 1191px) {
+      .body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: .3s ease-in-out;
+      }
+
+      .first-content{
+        height: 30rem;
+        position: relative;
+        width: 100%;
+        background-image: url('../src/images/cabin.jpg');
+        background-size: 100% 40rem;
+        background-position-y: center;
+        transition: .3s ease-in-out;
+        max-width: 1600px;
+      }
+
+      .second-content{
+        max-width: 1600px;
+      }
+
+      .inner {
+        align-items: center;
+        transition: .3s ease-in-out;
+        padding-right: 10px;
+        padding-left: 10px;
+        transition: .3s ease-in-out;
+      }
+
+      .intro {
+        font-size: 13pt;
+        transition: .3s ease-in-out;
+        text-align: center;
+        width: 375px;
+        transition: .3s ease-in-out;
+      }
+
+      .icon-container {
+        display: none;
+        transition: .3s ease-in-out;
+      }
+
+      .second-content{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        width: 100%;
+        transition: .3s ease-in-out;
+      }
+
+      .summary-container {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: .3s ease-in-out;
+      }
+
+      .experience-title {
+        font-size: 17pt;
+        color: rgba(0, 0, 0, 0.6);
+        align-self: flex-start;
+        transition: .3s ease-in-out;
+      }
+
+      .experience-container {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: .3s ease-in-out;
+      }
+
+      .work-items-row {
+        /* background-color: aqua; */
+        justify-content: space-around;
+        transition: .3s ease-in-out;
+      }
+
+      .work-item {
+        margin: 0px;
+        transition: .3s ease-in-out;
+      }
+
+      .button-container {
+        align-self: flex-start;
+        transition: .3s ease-in-out;
+      }
     }
 
+
+
+    @media screen and (max-width: 900px) {
+      .second-content{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        width: 100%;
+        transition: .3s ease-in-out;
+      }
+
+      .summary-container {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: .3s ease-in-out;
+      }
+
+      .experience-title {
+        font-size: 17pt;
+        color: rgba(0, 0, 0, 0.6);
+        align-self: flex-start;
+        transition: .3s ease-in-out;
+      }
+
+      .experience-container {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: .3s ease-in-out;
+      }
+
+      .work-items-row {
+        /* background-color: aqua; */
+        justify-content: space-around;
+        transition: .3s ease-in-out;
+      }
+
+      .work-item {
+        margin: 0px;
+        transition: .3s ease-in-out;
+      }
+
+      .button-container {
+        align-self: flex-start;
+        transition: .3s ease-in-out;
+      }
+
+      .text-input-address {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        transition: .3s ease-in-out;
+      }
+    
+      .action-3 {
+        margin-bottom: 1rem;
+        transition: .3s ease-in-out;
+      }
+    
+      .info-content {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 3rem;
+        transition: .3s ease-in-out;
+      }
+
+    }
+    
+
+
+    @media screen and (max-width: 610px) {
+      .summary-content {
+        width: 95%;
+        transition: .3s ease-in-out;
+      }
     .experience-container {
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
+        width: 95%;
+        transition: .3s ease-in-out;
+      }
+    .send-message-container {
+        width: 95%;
+        transition: .3s ease-in-out;
+      }
+    .tech-container {
+        width: 95%;
+        transition: .3s ease-in-out;
+      }
     }
 
-    .work-items-row {
-      /* background-color: aqua; */
-      justify-content: space-around;
+
+
+    @media screen and (max-width: 575px) {
+      .second-content{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        width: 100%;
+        transition: .3s ease-in-out;
+      }
+
+      .summary-container {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: .3s ease-in-out;
+      }
+
+      .experience-title {
+        font-size: 17pt;
+        color: rgba(0, 0, 0, 0.6);
+        align-self: flex-start;
+        transition: .3s ease-in-out;
+      }
+
+      .experience-container {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: .3s ease-in-out;
+
+      }
+
+      .work-items-row {
+        /* background-color: aqua; */
+        justify-content: space-around;
+        transition: .3s ease-in-out;
+      }
+
+      .work-item {
+        margin: 0px;
+        transition: .3s ease-in-out;
+      }
+
+      .button-container {
+        align-self: flex-start;
+        transition: .3s ease-in-out;
+      }
+
+      .text-input-address {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        transition: .3s ease-in-out;
+      }
+
+      .action-3 {
+        margin-bottom: 1rem;
+        transition: .3s ease-in-out;
+      }
+
+      .info-content {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 3rem;
+        transition: .3s ease-in-out;
+      }
     }
 
-    .work-item {
-      margin: 0px;
-    }
 
-    .button-container {
-      align-self: flex-start;
+    @media screen and (max-width: 500px) {
+      .text-input-container {
+        width: 100%;
+        transition: .3s ease-in-out;
+      }
+    
+      input {
+        width: 42%;
+        transition: .3s ease-in-out;
+      }
+    
+      #message {
+        width: 97%;
+        transition: .3s ease-in-out;
+      }
     }
-  }
-
-  @media screen and (max-width: 900px) {
-    .second-content{
-      display: flex;
-      justify-content: center;
-      align-self: center;
-      align-items: center;
-      width: 100%;
-    }
-
-    .summary-container {
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .experience-title {
-      font-size: 17pt;
-      color: rgba(0, 0, 0, 0.6);
-      align-self: flex-start;
-    }
-
-    .experience-container {
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-    }
-
-    .work-items-row {
-      /* background-color: aqua; */
-      justify-content: space-around;
-    }
-
-    .work-item {
-      margin: 0px;
-    }
-
-    .button-container {
-      align-self: flex-start;
-    }
-
-    .text-input-address {
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-    }
-  
-    .action-3 {
-      margin-bottom: 1rem;
-    }
-  
-    .info-content {
-      display: flex;
-      align-items: flex-start;
-      width: 100%;
-      margin-bottom: 3rem;
-    }
-
-  }
-
-  @media screen and (max-width: 575px) {
-    .second-content{
-      display: flex;
-      justify-content: center;
-      align-self: center;
-      align-items: center;
-      width: 100%;
-    }
-
-    .summary-container {
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .experience-title {
-      font-size: 17pt;
-      color: rgba(0, 0, 0, 0.6);
-      align-self: flex-start;
-    }
-
-    .experience-container {
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-    }
-
-    .work-items-row {
-      /* background-color: aqua; */
-      justify-content: space-around;
-    }
-
-    .work-item {
-      margin: 0px;
-    }
-
-    .button-container {
-      align-self: flex-start;
-    }
-
-    .text-input-address {
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-    }
-
-    .action-3 {
-      margin-bottom: 1rem;
-    }
-
-    .info-content {
-      flex-direction: column;
-      display: flex;
-      align-items: flex-start;
-      width: 100%;
-      margin-bottom: 3rem;
-    }
-  }
