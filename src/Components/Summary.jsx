@@ -3,7 +3,7 @@ import RecentWork from './RecentWork';
 import SendMessage from './SendMessage';
 import TechnologiesUsed from './TechnologiesUsed';
 
-export default function Summary ({ props }) {
+export default function Summary ({ openModal }) {
     return (
         <div className='main-content'>
             <div className='second-content'>
@@ -18,7 +18,7 @@ export default function Summary ({ props }) {
                             to the end user, which will not take away from the experience that makes your app fun and unique.</p>
                             <a href='#'><button className='action'>view content</button></a>
                         </div>
-                        <RecentWork />
+                        <RecentWork openModal={openModal} />
                         <SendMessage />
                         <TechnologiesUsed />
                     </div>

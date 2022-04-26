@@ -1,9 +1,10 @@
 import React, {useCallback, useState, useContext, useEffect, useRef} from 'react';
+import MainIcons from './MainIcons';
 
 export default function Footer ({ props }) {
     return (
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh', }}>
-            Footer
+        <div className='footer'>
+            <MainIcons container='icon-container-2' />
         </div>
     )
 }

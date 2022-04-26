@@ -51,7 +51,7 @@
   /* side profile */
 
   .first-content{
-    height: 100vh;
+    height: 100%;
     position: fixed;
     justify-content: center;
     display: flex;
@@ -60,7 +60,7 @@
     object-fit: cover;
     background-image: url('../src/images/woods.jpg');
     background-repeat: no-repeat;
-    background-size: 100% 100vh;
+    background-size: 100% 70rem;
     transition: .3s ease-in-out;
   }
 
@@ -472,6 +472,54 @@
     height: 55px;
   }
 
+  /* Footer */
+  .footer {
+    display: none;
+    transition: .3s ease-in-out;
+  }
+
+
+  /* Modal container */
+  .modal-container {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: .5s ease-in;
+  }
+
+  .close-modal {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: white;
+  }
+
+  .modal-content {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: red;
+    transition: .5s ease-in;
+  }
+
+  .left-arrow {
+    background-color: white;
+    width: 70px;
+    height: 50%;
+  }
+
 
     /* @media queries */
     @media screen and (max-width: 1383px) {
@@ -523,18 +571,18 @@
     @media screen and (max-width: 1191px) {
       .body {
         display: flex;
-        justify-content: center;
         align-items: center;
         flex-direction: column;
         transition: .3s ease-in-out;
+        justify-content: flex-start;
       }
 
       .first-content{
-        height: 30rem;
+        height: 25rem;
         position: relative;
         width: 100%;
         background-image: url('../src/images/cabin.jpg');
-        background-size: 100% 40rem;
+        background-size: 100% 35rem;
         background-position-y: center;
         transition: .3s ease-in-out;
         max-width: 1600px;
@@ -558,6 +606,7 @@
         text-align: center;
         width: 375px;
         transition: .3s ease-in-out;
+        color: rgba(255, 254, 255, 1);
       }
 
       .icon-container {
@@ -612,6 +661,22 @@
 
       .button-container {
         align-self: flex-start;
+        transition: .3s ease-in-out;
+      }
+
+      .footer {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 10rem;
+        justify-content: center;
+        background-color: red;
+        object-fit: cover;
+        background-image: url('../src/images/valley.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100vh;
+        background-position-y: bottom;
         transition: .3s ease-in-out;
       }
     }
@@ -694,20 +759,35 @@
 
 
     @media screen and (max-width: 610px) {
+      .first-content{
+        height: 15rem;
+        background-image: url('../src/images/cabin.jpg');
+        background-size: 100% 25rem;
+        transition: .3s ease-in-out;
+      }
+
       .summary-content {
         width: 95%;
         transition: .3s ease-in-out;
       }
+      
     .experience-container {
         width: 95%;
         transition: .3s ease-in-out;
       }
+
     .send-message-container {
         width: 95%;
         transition: .3s ease-in-out;
       }
+      
     .tech-container {
         width: 95%;
+        transition: .3s ease-in-out;
+      }
+
+      .footer {
+        background-size: 100% 50vh;
         transition: .3s ease-in-out;
       }
     }
@@ -787,6 +867,7 @@
         transition: .3s ease-in-out;
       }
     }
+
 
 
     @media screen and (max-width: 500px) {
