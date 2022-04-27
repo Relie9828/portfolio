@@ -8,24 +8,28 @@ import ImageModal from './Components/ImageModal';
 export default function App ({ props }) {
 
     const [showModal, setShowModal] = useState(false)
-    const openModal = () => {
+    const toggleModal = () => {
         setShowModal(!showModal)
     }
 
-    const goToNext = () => {
-        setShowModal(true)
+    const showNext = () => {
         console.log('right')
+    }
+
+    const showPrevious = () => {
+        console.log('left')
     }
     
     return (
         <div className='body'>
             {showModal ? 
-            <ImageModal openModal={openModal}
-            goToNext={goToNext} /> 
+            <ImageModal toggleModal={toggleModal}
+            showPrevious={showPrevious}
+            showNext={showNext} /> 
             : 
             null }
             <SideContent />
-            <Summary openModal={openModal} />
+            <Summary toggleModal={toggleModal} />
             <Footer />
         </div>
     )

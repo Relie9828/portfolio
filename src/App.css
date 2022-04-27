@@ -497,30 +497,13 @@
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
     width: 100%;
-    z-index: 0;
-  }
-
-  .modal-top-content {
+    transform: translateY(0);
     position: absolute;
-  }
-
-  .close-modal {
-    display: flex;
-    align-items: center;
-    padding-right: 50px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    justify-content: flex-end;
-    width: 100%;
-  }
-
-  .close-modal-btn {
-    margin-right: 50px;
   }
 
   .modal-content {
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -535,6 +518,7 @@
     width: 50%;
     overflow: hidden;
     border-radius: 15px;
+    z-index: 2;
   }
 
   .modal-image {

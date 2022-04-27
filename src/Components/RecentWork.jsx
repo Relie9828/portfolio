@@ -7,7 +7,7 @@ import image5 from '../images/thumbs/05.jpg';
 import image6 from '../images/thumbs/06.jpg';
 import '../App.css';
 
-export default function RecentWork ({ openModal }) {
+export default function RecentWork ({ toggleModal }) {
 
     const [active, setActive] = useState(`Currently active on the apple & google play store.`);
     const [innactive, setInnactive] = useState(`Currently innactive on the apple & google play store.`);
@@ -31,7 +31,7 @@ export default function RecentWork ({ openModal }) {
                     return (
                     <div className="work-item">
                         <img className="thumbnail" src={item.image} alt="" />
-                        <div className='overlay' onClick={openModal}>
+                        <div className='overlay' onClick={toggleModal}>
                             <button className='overlay-btn'>view</button>
                         </div>
                         <p className='work-title'>{item.title}</p>
