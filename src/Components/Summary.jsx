@@ -3,7 +3,7 @@ import RecentWork from './RecentWork';
 import SendMessage from './SendMessage';
 import TechnologiesUsed from './TechnologiesUsed';
 
-export default function Summary ({ openModal }) {
+export default function Summary ({ openModal, goToNext }) {
     return (
         <div className='main-content'>
             <div className='second-content'>

@@ -11,10 +11,19 @@ export default function App ({ props }) {
     const openModal = () => {
         setShowModal(!showModal)
     }
+
+    const goToNext = () => {
+        setShowModal(true)
+        console.log('right')
+    }
     
     return (
         <div className='body'>
-            {showModal ? <ImageModal openModal={openModal} /> : null }
+            {showModal ? 
+            <ImageModal openModal={openModal}
+            goToNext={goToNext} /> 
+            : 
+            null }
             <SideContent />
             <Summary openModal={openModal} />
             <Footer />

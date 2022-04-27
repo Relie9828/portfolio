@@ -489,9 +489,19 @@
     position: fixed;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.5);
     transition: .5s ease-in;
+    justify-content: space-between;
+  }
+
+  .modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .modal-top-content {
+    position: absolute;
   }
 
   .close-modal {
@@ -502,7 +512,10 @@
     padding-bottom: 25px;
     justify-content: flex-end;
     width: 100%;
-    background-color: white;
+  }
+
+  .close-modal-btn {
+    margin-right: 50px;
   }
 
   .modal-content {
@@ -510,380 +523,458 @@
     height: 90vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-color: red;
+    justify-content: center;
     transition: .5s ease-in;
   }
 
+  .modal-image-container {
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+
+  .modal-image {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 25rem;
+    width: 720px;
+  }
+
+  .modal-image-overlay{
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    margin-top: -40px;
+    display: flex;
+    height: 25rem;
+    width: 720px;
+  }
+
   .left-arrow {
+    height: 100%;
+    width: 200px;
+    display: flex;
+    padding-left: 25px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .right-arrow {
+    height: 100%;
+    width: 200px;
+    display: flex;
+    padding-right: 25px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #right, #left {
+    cursor: pointer;
+  }
+
+  .modal-image-text-container {
     background-color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .modal-image-text {
+    width: 70%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .modal-image-button {
+    border: solid rgba(0, 0, 0, 0.07) 1.5px;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    height: 15px;
     width: 70px;
-    height: 50%;
+  }
+
+  .modal-image-button:hover {
+    border: solid rgba(0, 0, 0, 0.50) 1.5px;
   }
 
 
-    /* @media queries */
-    @media screen and (max-width: 1383px) {
-      .first-content{
-        transition: .3s ease-in-out;
-        width: 35%;
-      }
+        /* @media queries */
+        @media screen and (max-width: 1383px) {
+          .first-content{
+            transition: .3s ease-in-out;
+            width: 35%;
+          }
 
-      .second-content{
-        width: 65%;
-        transition: .3s ease-in-out;
-      }
-    }
+          .second-content{
+            width: 65%;
+            transition: .3s ease-in-out;
+          }
+        }
 
-    @media screen and (max-width: 1297px) {
-      .first-content{
-        transition: .3s ease-in-out;
-        width: 30%;
-        max-width: 1600px;
-      }
+        @media screen and (max-width: 1297px) {
+          .first-content{
+            transition: .3s ease-in-out;
+            width: 30%;
+            max-width: 1600px;
+          }
 
-      .inner {
-        align-items: center;
-        transition: .3s ease-in-out;
-        padding-right: 10px;
-        padding-left: 10px;
-      }
+          .inner {
+            align-items: center;
+            transition: .3s ease-in-out;
+            padding-right: 10px;
+            padding-left: 10px;
+          }
 
-      .intro {
-        font-size: 13pt;
-        transition: .3s ease-in-out;
-        text-align: center;
-        width: 100%;
-      }
+          .intro {
+            font-size: 13pt;
+            transition: .3s ease-in-out;
+            text-align: center;
+            width: 100%;
+          }
 
-      .icon-content {
-        align-self: center;
-        transition: .3s ease-in-out;
-      }
+          .icon-content {
+            align-self: center;
+            transition: .3s ease-in-out;
+          }
 
-      .second-content{
-        width: 70%;
-        transition: .3s ease-in-out;
-      }
-    }
-
-
-
-    @media screen and (max-width: 1191px) {
-      .body {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        transition: .3s ease-in-out;
-        justify-content: flex-start;
-      }
-
-      .first-content{
-        height: 25rem;
-        position: relative;
-        width: 100%;
-        background-image: url('../src/images/cabin.jpg');
-        background-size: 100% 35rem;
-        background-position-y: center;
-        transition: .3s ease-in-out;
-        max-width: 1600px;
-      }
-
-      .second-content{
-        max-width: 1600px;
-      }
-
-      .inner {
-        align-items: center;
-        transition: .3s ease-in-out;
-        padding-right: 10px;
-        padding-left: 10px;
-        transition: .3s ease-in-out;
-      }
-
-      .intro {
-        font-size: 13pt;
-        transition: .3s ease-in-out;
-        text-align: center;
-        width: 375px;
-        transition: .3s ease-in-out;
-        color: rgba(255, 254, 255, 1);
-      }
-
-      .icon-container {
-        display: none;
-        transition: .3s ease-in-out;
-      }
-
-      .second-content{
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        align-items: center;
-        width: 100%;
-        transition: .3s ease-in-out;
-      }
-
-      .summary-container {
-        margin-top: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: .3s ease-in-out;
-      }
-
-      .experience-title {
-        font-size: 17pt;
-        color: rgba(0, 0, 0, 0.6);
-        align-self: flex-start;
-        transition: .3s ease-in-out;
-      }
-
-      .experience-container {
-        margin-top: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: .3s ease-in-out;
-      }
-
-      .work-items-row {
-        /* background-color: aqua; */
-        justify-content: space-around;
-        transition: .3s ease-in-out;
-      }
-
-      .work-item {
-        margin: 0px;
-        transition: .3s ease-in-out;
-      }
-
-      .button-container {
-        align-self: flex-start;
-        transition: .3s ease-in-out;
-      }
-
-      .footer {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        height: 10rem;
-        justify-content: center;
-        background-color: red;
-        object-fit: cover;
-        background-image: url('../src/images/valley.jpg');
-        background-repeat: no-repeat;
-        background-size: 100% 100vh;
-        background-position-y: bottom;
-        transition: .3s ease-in-out;
-      }
-    }
+          .second-content{
+            width: 70%;
+            transition: .3s ease-in-out;
+          }
+        }
 
 
 
-    @media screen and (max-width: 900px) {
-      .second-content{
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        align-items: center;
-        width: 100%;
-        transition: .3s ease-in-out;
-      }
+        @media screen and (max-width: 1191px) {
+          .body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            transition: .3s ease-in-out;
+            justify-content: flex-start;
+          }
 
-      .summary-container {
-        margin-top: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: .3s ease-in-out;
-      }
+          .first-content{
+            height: 25rem;
+            position: relative;
+            width: 100%;
+            background-image: url('../src/images/cabin.jpg');
+            background-size: 100% 35rem;
+            background-position-y: center;
+            transition: .3s ease-in-out;
+            max-width: 1600px;
+          }
 
-      .experience-title {
-        font-size: 17pt;
-        color: rgba(0, 0, 0, 0.6);
-        align-self: flex-start;
-        transition: .3s ease-in-out;
-      }
+          .second-content{
+            max-width: 1600px;
+          }
 
-      .experience-container {
-        margin-top: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: .3s ease-in-out;
-      }
+          .inner {
+            align-items: center;
+            transition: .3s ease-in-out;
+            padding-right: 10px;
+            padding-left: 10px;
+            transition: .3s ease-in-out;
+          }
 
-      .work-items-row {
-        /* background-color: aqua; */
-        justify-content: space-around;
-        transition: .3s ease-in-out;
-      }
+          .intro {
+            font-size: 13pt;
+            transition: .3s ease-in-out;
+            text-align: center;
+            width: 375px;
+            transition: .3s ease-in-out;
+            color: rgba(255, 254, 255, 1);
+          }
 
-      .work-item {
-        margin: 0px;
-        transition: .3s ease-in-out;
-      }
+          .icon-container {
+            display: none;
+            transition: .3s ease-in-out;
+          }
 
-      .button-container {
-        align-self: flex-start;
-        transition: .3s ease-in-out;
-      }
+          .second-content{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            align-items: center;
+            width: 100%;
+            transition: .3s ease-in-out;
+          }
 
-      .text-input-address {
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        transition: .3s ease-in-out;
-      }
-    
-      .action-3 {
-        margin-bottom: 1rem;
-        transition: .3s ease-in-out;
-      }
-    
-      .info-content {
-        display: flex;
-        align-items: flex-start;
-        width: 100%;
-        margin-bottom: 3rem;
-        transition: .3s ease-in-out;
-      }
+          .summary-container {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: .3s ease-in-out;
+          }
 
-    }
-    
+          .experience-title {
+            font-size: 17pt;
+            color: rgba(0, 0, 0, 0.6);
+            align-self: flex-start;
+            transition: .3s ease-in-out;
+          }
 
+          .experience-container {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: .3s ease-in-out;
+          }
 
-    @media screen and (max-width: 610px) {
-      .first-content{
-        height: 15rem;
-        background-image: url('../src/images/cabin.jpg');
-        background-size: 100% 25rem;
-        transition: .3s ease-in-out;
-      }
+          .work-items-row {
+            justify-content: space-around;
+            transition: .3s ease-in-out;
+          }
 
-      .summary-content {
-        width: 95%;
-        transition: .3s ease-in-out;
-      }
-      
-    .experience-container {
-        width: 95%;
-        transition: .3s ease-in-out;
-      }
+          .work-item {
+            margin: 0px;
+            transition: .3s ease-in-out;
+          }
 
-    .send-message-container {
-        width: 95%;
-        transition: .3s ease-in-out;
-      }
-      
-    .tech-container {
-        width: 95%;
-        transition: .3s ease-in-out;
-      }
+          .button-container {
+            align-self: flex-start;
+            transition: .3s ease-in-out;
+          }
 
-      .footer {
-        background-size: 100% 50vh;
-        transition: .3s ease-in-out;
-      }
-    }
-
-
-
-    @media screen and (max-width: 575px) {
-      .second-content{
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        align-items: center;
-        width: 100%;
-        transition: .3s ease-in-out;
-      }
-
-      .summary-container {
-        margin-top: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: .3s ease-in-out;
-      }
-
-      .experience-title {
-        font-size: 17pt;
-        color: rgba(0, 0, 0, 0.6);
-        align-self: flex-start;
-        transition: .3s ease-in-out;
-      }
-
-      .experience-container {
-        margin-top: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: .3s ease-in-out;
-
-      }
-
-      .work-items-row {
-        /* background-color: aqua; */
-        justify-content: space-around;
-        transition: .3s ease-in-out;
-      }
-
-      .work-item {
-        margin: 0px;
-        transition: .3s ease-in-out;
-      }
-
-      .button-container {
-        align-self: flex-start;
-        transition: .3s ease-in-out;
-      }
-
-      .text-input-address {
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        transition: .3s ease-in-out;
-      }
-
-      .action-3 {
-        margin-bottom: 1rem;
-        transition: .3s ease-in-out;
-      }
-
-      .info-content {
-        flex-direction: column;
-        display: flex;
-        align-items: flex-start;
-        width: 100%;
-        margin-bottom: 3rem;
-        transition: .3s ease-in-out;
-      }
-    }
+          .footer {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 10rem;
+            justify-content: center;
+            background-color: red;
+            object-fit: cover;
+            background-image: url('../src/images/valley.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100vh;
+            background-position-y: bottom;
+            transition: .3s ease-in-out;
+          }
+        }
 
 
 
-    @media screen and (max-width: 500px) {
-      .text-input-container {
-        width: 100%;
-        transition: .3s ease-in-out;
-      }
-    
-      input {
-        width: 42%;
-        transition: .3s ease-in-out;
-      }
-    
-      #message {
-        width: 97%;
-        transition: .3s ease-in-out;
-      }
-    }
+        @media screen and (max-width: 900px) {
+          .second-content{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            align-items: center;
+            width: 100%;
+            transition: .3s ease-in-out;
+          }
+
+          .summary-container {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: .3s ease-in-out;
+          }
+
+          .experience-title {
+            font-size: 17pt;
+            color: rgba(0, 0, 0, 0.6);
+            align-self: flex-start;
+            transition: .3s ease-in-out;
+          }
+
+          .experience-container {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: .3s ease-in-out;
+          }
+
+          .work-items-row {
+            /* background-color: aqua; */
+            justify-content: space-around;
+            transition: .3s ease-in-out;
+          }
+
+          .work-item {
+            margin: 0px;
+            transition: .3s ease-in-out;
+          }
+
+          .button-container {
+            align-self: flex-start;
+            transition: .3s ease-in-out;
+          }
+
+          .text-input-address {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            transition: .3s ease-in-out;
+          }
+        
+          .action-3 {
+            margin-bottom: 1rem;
+            transition: .3s ease-in-out;
+          }
+        
+          .info-content {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            margin-bottom: 3rem;
+            transition: .3s ease-in-out;
+          }
+
+        }
+        
+
+
+        @media screen and (max-width: 610px) {
+          .first-content{
+            height: 15rem;
+            background-image: url('../src/images/cabin.jpg');
+            background-size: 100% 25rem;
+            transition: .3s ease-in-out;
+          }
+
+          .summary-content {
+            width: 95%;
+            transition: .3s ease-in-out;
+          }
+          
+        .experience-container {
+            width: 95%;
+            transition: .3s ease-in-out;
+          }
+
+        .send-message-container {
+            width: 95%;
+            transition: .3s ease-in-out;
+          }
+          
+        .tech-container {
+            width: 95%;
+            transition: .3s ease-in-out;
+          }
+
+          .footer {
+            background-size: 100% 50vh;
+            transition: .3s ease-in-out;
+          }
+        }
+
+
+
+        @media screen and (max-width: 575px) {
+          .second-content{
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            align-items: center;
+            width: 100%;
+            transition: .3s ease-in-out;
+          }
+
+          .summary-container {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: .3s ease-in-out;
+          }
+
+          .experience-title {
+            font-size: 17pt;
+            color: rgba(0, 0, 0, 0.6);
+            align-self: flex-start;
+            transition: .3s ease-in-out;
+          }
+
+          .experience-container {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: .3s ease-in-out;
+
+          }
+
+          .work-items-row {
+            justify-content: space-around;
+            transition: .3s ease-in-out;
+          }
+
+          .work-item {
+            margin: 0px;
+            transition: .3s ease-in-out;
+          }
+
+          .button-container {
+            align-self: flex-start;
+            transition: .3s ease-in-out;
+          }
+
+          .text-input-address {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            transition: .3s ease-in-out;
+          }
+
+          .action-3 {
+            margin-bottom: 1rem;
+            transition: .3s ease-in-out;
+          }
+
+          .info-content {
+            flex-direction: column;
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            margin-bottom: 3rem;
+            transition: .3s ease-in-out;
+          }
+        }
+
+
+
+        @media screen and (max-width: 500px) {
+          .text-input-container {
+            width: 100%;
+            transition: .3s ease-in-out;
+          }
+        
+          input {
+            width: 42%;
+            transition: .3s ease-in-out;
+          }
+        
+          #message {
+            width: 97%;
+            transition: .3s ease-in-out;
+          }
+        }
