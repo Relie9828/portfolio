@@ -23,8 +23,7 @@ export default function App ({ props }) {
     return (
         <div className='body'>
             {showModal && <ImageModal toggleModal={toggleModal}
-            showPrevious={showPrevious}
-            showNext={showNext} /> }
+            showPrevious={showPrevious} showNext={showNext} />}
             <SideContent />
             <Summary toggleModal={toggleModal} />
             <Footer />
