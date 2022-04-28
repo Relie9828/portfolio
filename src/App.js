@@ -10,24 +10,21 @@ export default function App ({ props }) {
     const [showModal, setShowModal] = useState(false)
     const toggleModal = () => {
         setShowModal(!showModal)
-    }
+    };
 
     const showNext = () => {
-        console.log('right')
-    }
+        console.log('show next')
+    };
 
     const showPrevious = () => {
-        console.log('left')
-    }
+        console.log('show previous')
+    };
     
     return (
         <div className='body'>
-            {showModal ? 
-            <ImageModal toggleModal={toggleModal}
+            {showModal && <ImageModal toggleModal={toggleModal}
             showPrevious={showPrevious}
-            showNext={showNext} /> 
-            : 
-            null }
+            showNext={showNext} /> }
             <SideContent />
             <Summary toggleModal={toggleModal} />
             <Footer />
