@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.d463d37a.css",
+    "main.css": "/static/css/main.f09418f4.css",
     "main.js": "/static/js/main.009bfb17.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/avatars.PNG": "/static/media/avatars.fc2ebcfbc31e490d18d4.PNG",
@@ -9,12 +9,12 @@
     "static/media/cabin.jpg": "/static/media/cabin.18bbc2055a349bfaf4fc.jpg",
     "static/media/expo-logo.png": "/static/media/expo-logo.573c3177dd4267db299a.png",
     "index.html": "/index.html",
-    "main.d463d37a.css.map": "/static/css/main.d463d37a.css.map",
+    "main.f09418f4.css.map": "/static/css/main.f09418f4.css.map",
     "main.009bfb17.js.map": "/static/js/main.009bfb17.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d463d37a.css",
+    "static/css/main.f09418f4.css",
     "static/js/main.009bfb17.js"
   ]
 }
