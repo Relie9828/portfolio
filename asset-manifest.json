@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f09418f4.css",
-    "main.js": "/static/js/main.009bfb17.js",
+    "main.css": "/static/css/main.3c4f2a1d.css",
+    "main.js": "/static/js/main.2fd1f86c.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/avatars.PNG": "/static/media/avatars.fc2ebcfbc31e490d18d4.PNG",
     "static/media/woods.jpg": "/static/media/woods.7a1457ffc52a762eaa33.jpg",
@@ -9,12 +9,12 @@
     "static/media/cabin.jpg": "/static/media/cabin.18bbc2055a349bfaf4fc.jpg",
     "static/media/expo-logo.png": "/static/media/expo-logo.573c3177dd4267db299a.png",
     "index.html": "/index.html",
-    "main.f09418f4.css.map": "/static/css/main.f09418f4.css.map",
-    "main.009bfb17.js.map": "/static/js/main.009bfb17.js.map",
+    "main.3c4f2a1d.css.map": "/static/css/main.3c4f2a1d.css.map",
+    "main.2fd1f86c.js.map": "/static/js/main.2fd1f86c.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f09418f4.css",
-    "static/js/main.009bfb17.js"
+    "static/css/main.3c4f2a1d.css",
+    "static/js/main.2fd1f86c.js"
   ]
 }
