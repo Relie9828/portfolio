@@ -13,13 +13,20 @@ export default function SendMessage ({ props }) {
                 </p>
                 <div className="text-input-address">
                     <div className="text-input-container">
-                        <form method="post" action="submit">
+                        <form className='form' method="post" action="submit">
                             <div className="text-input-content">
                                 <div className='name-email'>
-                                    <input type="text" name="name" id="name" placeholder="Name" />
-                                    <input type="email" name="email" id="email" placeholder="Email" />
+                                    <div className='name-container'>
+                                        <input type="text" id="name" placeholder="Name" />
+                                    </div>
+
+                                    <div className='email-container'>
+                                        <input type="email" id="email" placeholder="Email" />
+                                    </div>
                                 </div>
-                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                                <div className='message' >
+                                    <textarea name="message" id="message" placeholder="Message" />
+                                </div>
                             </div>
                         </form>
                         <button className="action-3" type="submit" >Message</button>
