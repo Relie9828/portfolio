@@ -555,7 +555,7 @@
 
   .modal-image-overlay{
     justify-content: space-between;
-    transition: .3s ease-in-out;
+    transition: .9s ease-in-out;
     flex-direction: row;
     align-items: center;
     position: absolute;
@@ -570,7 +570,6 @@
     height: 100%;
     width: 200px;
     display: flex;
-    padding-left: 25px;
     align-items: center;
     justify-content: flex-start;
     transition: .3s ease-in-out;
@@ -580,14 +579,23 @@
     height: 100%;
     width: 200px;
     display: flex;
-    padding-right: 25px;
-    align-items: center;
-    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
     transition: .3s ease-in-out;
+    justify-content: space-between;
+  }
+
+  .close {
+    justify-content: flex-end;
+    display: flex;
+    padding: 10px;
+    width: 100%;
   }
 
   #right, #left {
     cursor: pointer;
+    padding-right: 25px;
+    padding-left: 25px;
   }
 
   .modal-image-text-container {
@@ -691,8 +699,8 @@
             height: 25rem;
             position: relative;
             width: 100%;
-            background-image: url('../src/images/cabin.jpg');
-            background-size: 100% 35rem;
+            background-image: url('../src/images/mountains.jpg');
+            background-size: 100% 30rem;
             background-position-y: center;
             transition: .3s ease-in-out;
             max-width: 1600px;
@@ -868,14 +876,13 @@
 
           .modal-content {
             width: 1090px;
-            height: 90vh;
             transition: .3s ease-in-out;
           }
         
           .modal-image-overlay{
             width: 545px;
             height: 20rem;
-            transition: .3s ease-in-out;
+            transition: .1s ease-in-out;
           }
 
           .modal-image {
@@ -887,7 +894,6 @@
             width: 140px;
             transition: .3s ease-in-out;
           }
-
         }
         
 
@@ -895,7 +901,6 @@
         @media screen and (max-width: 610px) {
           .first-content{
             height: 15rem;
-            background-image: url('../src/images/cabin.jpg');
             background-size: 100% 25rem;
             transition: .3s ease-in-out;
           }
@@ -922,6 +927,27 @@
 
           .footer {
             background-size: 100% 50vh;
+            transition: .3s ease-in-out;
+          }
+
+          .modal-content {
+            width: 907px;
+            transition: .3s ease-in-out;
+          }
+        
+          .modal-image-overlay{
+            width: 454px;
+            height: 16rem;
+            transition: .3s ease-in-out;
+          }
+
+          .modal-image {
+            height: 16rem;
+            transition: .3s ease-in-out;
+          }
+        
+          .left-arrow, .right-arrow {
+            width: 120px;
             transition: .3s ease-in-out;
           }
         }
@@ -992,6 +1018,16 @@
             margin-bottom: 3rem;
             transition: .3s ease-in-out;
           }
+
+          .modal-content {
+            width: 890px;
+            transition: .3s ease-in-out;
+          }
+
+          .modal-image-overlay{
+            width: 446px;
+            transition: .3s ease-in-out;
+          }
         }
 
 
@@ -1004,6 +1040,39 @@
 
           input {
             width: 83%;
+          }
+
+          .modal-content {
+            width: 840px;
+            transition: .3s ease-in-out;
+          }
+        
+          .modal-image-overlay{
+            width: 420px;
+            height: 16rem;
+            transition: .3s ease-in-out;
+          }
+
+          .modal-image {
+            height: 16rem;
+            transition: .3s ease-in-out;
+          }
+        
+          .left-arrow, .right-arrow {
+            width: 120px;
+            transition: .3s ease-in-out;
+          }
+        
+          .modal-image-text {
+            width: 100%;
+            font-size: 15px;
+            padding: 5px;
+          }
+        
+          .modal-image-button {
+            transition: 0.3s ease-in;
+            height: 12px;
+            width: 65px;
           }
         }
 
@@ -1035,5 +1104,26 @@
           .email-container {
             width: 100%;
             justify-content: flex-start;
+          }
+
+          .modal-content {
+            width: 700px;
+            transition: .3s ease-in-out;
+          }
+        
+          .modal-image-overlay{
+            width: 350px;
+            height: 13rem;
+            transition: .3s ease-in-out;
+          }
+
+          .modal-image {
+            height: 13rem;
+            transition: .3s ease-in-out;
+          }
+        
+          .left-arrow, .right-arrow {
+            width: 120px;
+            transition: .3s ease-in-out;
           }
         }

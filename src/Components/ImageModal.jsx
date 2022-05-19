@@ -14,7 +14,14 @@ export default function ImageModal ({ toggleModal, showNext, showPrevious }) {
                                 <IoIosArrowBack id='left' size={35} color='white' />
                             </div>
                             <div onClick={showNext} className='right-arrow'>
+                                <div className='close' onClick={toggleModal}>
+                                    <IoIosClose id='close' size={35} color='white' />
+                                </div>
                                 <IoIosArrowForward id='right' size={35} color='white' />
+                                
+                                <div className='close'>
+                                    <IoIosClose id='close' size={35} color='transparent' />
+                                </div>
                             </div>
                         </div>
                         <div className='modal-image-text-container'>
