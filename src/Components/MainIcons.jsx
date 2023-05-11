@@ -17,7 +17,7 @@ export default function MainIcons ({ container }) {
                 </div>
             </div>
             <div class="footer-details">
-                <li className='copyright'>All rights &copy; Reserved 2021</li>
+                <li className='copyright'>All rights &copy; Reserved 2023</li>
                 <li className='author'>Design by Aurelien Essome</li>
             </div>
         </div>
