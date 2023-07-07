@@ -10,16 +10,18 @@ import '../App.css';
 export default function RecentWork ({ toggleModal }) {
 
     const [active, setActive] = useState(`Currently active on the apple & google play store.`);
-    const [innactive, setInnactive] = useState(`Currently innactive on the apple & google play store.`);
-    const [activity, setActivity] = useState(active)
+    const [innactive, setInnactive] = useState(`Currently in development.`);
+    const [deprecated, setDeprecated] = useState(`Deprecated`);
+    const [inBeta, setInBeta] = useState(`Currently in Beta`);
+    const [activity, setActivity] = useState(active);
     
     const data = [
-        {id: '1', active: 'no', title: 'Washe', image:`${image1}`, status: activity,},
-        {id: '2', active: 'no', title: 'FOMO', image:`${image2}`, status: activity,},
-        {id: '3', active: 'no', title: 'Ride', image:`${image3}`, status: activity,},
-        {id: '4', active: 'no', title: 'Weather app', image:`${image4}`, status: activity,},
-        {id: '5', active: 'no', title: 'Calculator app', image:`${image5}`, status: activity,},
-        {id: '6', active: 'no', title: 'To do list', image:`${image6}`, status: activity,},
+        {id: '1', active: 'no', title: 'Washe', image:`${image1}`, status: activity, deprecated: true, inBeta: false},
+        {id: '2', active: 'no', title: 'F.O.M.O', image:`${image2}`, status: activity, deprecated: false, inBeta: true},
+        {id: '3', active: 'no', title: 'Ride', image:`${image3}`, status: activity, deprecated: false, inBeta: true},
+        {id: '4', active: 'no', title: 'Weather app', image:`${image4}`, status: activity, deprecated: true, inBeta: false},
+        {id: '5', active: 'no', title: 'Calculator app', image:`${image5}`, status: activity, deprecated: true, inBeta: false},
+        {id: '6', active: 'no', title: 'To do list', image:`${image6}`, status: activity, deprecated: true, inBeta: false},
     ];
 
     return (
@@ -38,7 +40,7 @@ export default function RecentWork ({ toggleModal }) {
                         { item.active === 'yes' ? 
                             <p className='work-description'>{item.status}</p> 
                             : 
-                            <p className='work-description'>{innactive}</p> 
+                            <p className='work-description'>{item.deprecated == true ? deprecated : item.inBeta == true ? inBeta : innactive}</p> 
                         }
                     </div>
                     )
