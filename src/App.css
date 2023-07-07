@@ -32,7 +32,7 @@
 
   .body { 
     margin: auto; 
-    max-width: 1450px; 
+    max-width: 1800px; 
     align-items: center; 
     justify-content: center; 
     align-self: 'center'; 
@@ -513,7 +513,7 @@
     flex-direction: column;
     transition: .5s ease-in;
     justify-content: space-between;
-    max-width: 1450px;
+    max-width: 1800px;
   }
 
   .modal-overlay {
