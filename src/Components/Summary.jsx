@@ -3,7 +3,7 @@ import TechnologiesUsed from './TechnologiesUsed';
 import SendMessage from './SendMessage';
 import RecentWork from './RecentWork';
 
-export default function Summary ({ toggleModal, goToNext }) {
+export default function Summary ({ toggleModal, toggleResume }) {
     return (
         <div className='main-content'>
             <div className='second-content'>
@@ -13,16 +13,18 @@ export default function Summary ({ toggleModal, goToNext }) {
                             <header className="summary-title-box">
                                 <p className='summary-title'>Summary</p>
                             </header>
-                            <p className='description'>As a UI/UX developer, I present simple and beautifully 
-                            minimalistic User Interfaces to your application&mdash;An application that is appealing 
-                            to the end user, which will not take away from the experience that makes your app fun and unique.</p>
-                            <a href='#'><button className='action'>My Resume</button></a>
+                            <p className='description'>As a seasoned UI/UX Developer, I strive to create clean, aesthetically pleasing, and minimalistic User Interfaces that effortlessly complement your application. My design philosophy centers around enhancing the user experience, augmenting your application's unique qualities, and ensuring an enjoyable, seamless interaction. By intricately weaving together form and function, my designs are not merely attractive—they enhance and uplift your application's core features, delivering an immersive, user-centered journey that is as engaging as it is intuitive.</p>
+                            <a href='#'>
+                                <button className='action' onClick={toggleResume}>
+                                    My Resume
+                                </button>
+                            </a>
                         </div>
                         
 
                         <RecentWork toggleModal={toggleModal} />
-                        <SendMessage />
                         <TechnologiesUsed />
+                        <SendMessage />
                     </div>
                 </div>
             </div>

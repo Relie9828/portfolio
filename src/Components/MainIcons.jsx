@@ -9,16 +9,20 @@ export default function MainIcons ({ container }) {
                 <div className='icon-1'>
                     <FaLinkedin size={25} color='rgba(255, 254, 255, 0.5)' />
                 </div>
+
                 <div className='icon-1'>
                     <DiGithubBadge size={30} color='rgba(255, 254, 255, 0.5)' />
                 </div>
+                
                 <div className='icon-1'>
                     <FaStackOverflow size={25} color='rgba(255, 254, 255, 0.5)' />
                 </div>
             </div>
+
             <div class="footer-details">
-                <li className='copyright'>All rights &copy; Reserved 2023</li>
-                <li className='author'>Design by Aurelien Essome</li>
+                <li className='copyright'>All rights &copy; Reserved {(new Date().getFullYear())}</li>
+
+                <li className='author'>Designed by Aurelien Essome</li>
             </div>
         </div>
     )

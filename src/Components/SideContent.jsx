@@ -8,8 +8,10 @@ export default function SideContent ({ props }) {
             <div className='header'>
                 <div className="inner">
                     <img className="image_avatar" src={avatar} alt="My_Profile_Image" />
-                    <p className="intro"><strong>I'm Aurelien Essome</strong>, —a mobile software developer, and a React native enthusiast.</p>
+                    
+                    <p className="intro"><strong>I'm Aurelien Essome</strong>, —a user experience developer, and a React native enthusiast.</p>
                 </div>
+
                 <MainIcons container='icon-container' />
             </div>
         </div>
