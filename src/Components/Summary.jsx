@@ -1,7 +1,7 @@
 import React, {useCallback, useState, useContext, useEffect, useRef} from 'react';
-import RecentWork from './RecentWork';
-import SendMessage from './SendMessage';
 import TechnologiesUsed from './TechnologiesUsed';
+import SendMessage from './SendMessage';
+import RecentWork from './RecentWork';
 
 export default function Summary ({ toggleModal, goToNext }) {
     return (
@@ -16,8 +16,10 @@ export default function Summary ({ toggleModal, goToNext }) {
                             <p className='description'>As a UI/UX developer, I present simple and beautifully 
                             minimalistic User Interfaces to your application&mdash;An application that is appealing 
                             to the end user, which will not take away from the experience that makes your app fun and unique.</p>
-                            <a href='#'><button className='action'>view content</button></a>
+                            <a href='#'><button className='action'>My Resume</button></a>
                         </div>
+                        
+
                         <RecentWork toggleModal={toggleModal} />
                         <SendMessage />
                         <TechnologiesUsed />

@@ -39,6 +39,14 @@
     overflow: hidden;
   }
 
+  .pdf {
+    width: 100.5vw;
+    height: 100%;
+    align-self: center;
+    z-index: 2;
+    position: fixed;
+  }
+
   .main-content {
     width: 100%;
     align-items: center;
