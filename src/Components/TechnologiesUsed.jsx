@@ -25,6 +25,7 @@ export default function TechnologiesUsed ({ props }) {
                 <IconContainer icon="devicon-html5-plain-wordmark colored" />
                 <IconContainer icon="devicon-css3-plain-wordmark colored" />
                 <IconContainer icon="devicon-javascript-plain colored" />
+                <IconContainer icon="devicon-typescript-plain colored" />
                 <IconContainer icon="devicon-nodejs-plain colored" />
                 <IconContainer icon="devicon-express-original" />
                 <IconContainer icon="devicon-firebase-plain colored" />
@@ -35,6 +36,9 @@ export default function TechnologiesUsed ({ props }) {
                 <IconContainer icon="devicon-xcode-plain colored" />
                 <IconContainer icon="devicon-apple-original colored" />
                 <IconContainer icon="devicon-xd-plain colored" />
+                <IconContainer icon="devicon-python-plain colored" />
+                <IconContainer icon="devicon-swift-plain colored" />
+                <IconContainer icon="devicon-figma-plain colored" />
             </div>
         </div>
     )

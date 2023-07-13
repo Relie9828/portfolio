@@ -39,6 +39,32 @@
     overflow: hidden;
   }
 
+  .pdf {
+    width: 100.5vw;
+    height: 100%;
+    align-self: center;
+    z-index: 2;
+    position: fixed;
+  }
+
+  .close-resume {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    font-size: small;
+    top: 10px;
+    left: 25px;
+    z-index: 4;
+    font-weight: 700;
+    border-width: 0px;
+  }
+
   .main-content {
     width: 100%;
     align-items: center;
@@ -314,7 +340,6 @@
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 4rem;
-    border-bottom: solid 1.4px rgba(0, 0, 0, 0.08);
     transition: .3s ease-in-out;
   }
 
@@ -459,20 +484,17 @@
     border-bottom: 1px dotted;
   }
 
-  .email:hover {
-    transition: 0.3s ease-in;
-    color: rgba(0, 0, 0, .7);
-    border-bottom: 1px dotted rgba(255, 255, 255, 0);
-  }
-
   /* Technologies used */
   .tech-container {
     color: rgba(0, 0, 0, 0.5);
     line-height: 1.80rem;
     width: 82%;
+    padding-bottom: 4rem;
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    border-bottom: solid 1.4px rgba(0, 0, 0, 0.08);
+    transition: .3s ease-in-out;
   }
 
   .tech-title {
@@ -551,6 +573,7 @@
     background-color: rgba(0, 0, 0, 0.7);
     height: 25rem;
     transition: .3s ease-in-out;
+    object-fit: cover;
   }
 
   .modal-image-overlay{
@@ -609,11 +632,14 @@
   }
 
   .modal-image-text {
-    width: 70%;
-    padding: 10px;
-    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    text-align: left;
+    font-size: 13px;
     margin-bottom: 5px;
     color: rgba(0, 0, 0, 0.7);
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .modal-image-button {
@@ -1028,6 +1054,11 @@
             width: 446px;
             transition: .3s ease-in-out;
           }
+
+          .icon-1 {
+            margin: 7px;
+            cursor: pointer;
+          }
         }
 
 
@@ -1064,8 +1095,8 @@
           }
         
           .modal-image-text {
-            width: 100%;
-            font-size: 15px;
+            width: 90%;
+            font-size: 10px;
             padding: 5px;
           }
         

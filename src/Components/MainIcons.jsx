@@ -6,19 +6,23 @@ export default function MainIcons ({ container }) {
     return (
         <div className={container}>
             <div className='icon-content'>
-                <div className='icon-1'>
+                <a className='icon-1' href='https://www.linkedin.com/in/aurelien-essome-1117941b3/'>
                     <FaLinkedin size={25} color='rgba(255, 254, 255, 0.5)' />
-                </div>
-                <div className='icon-1'>
+                </a>
+
+                <a className='icon-1' href='https://github.com/Relie9828'>
                     <DiGithubBadge size={30} color='rgba(255, 254, 255, 0.5)' />
-                </div>
-                <div className='icon-1'>
+                </a>
+                
+                <a className='icon-1' href='https://stackoverflow.com/users/16262518/relie-essom'>
                     <FaStackOverflow size={25} color='rgba(255, 254, 255, 0.5)' />
-                </div>
+                </a>
             </div>
+
             <div class="footer-details">
-                <li className='copyright'>All rights &copy; Reserved 2023</li>
-                <li className='author'>Design by Aurelien Essome</li>
+                <li className='copyright'>All rights &copy; Reserved {(new Date().getFullYear())}</li>
+
+                <li className='author'>Designed by Aurelien Essome</li>
             </div>
         </div>
     )
