@@ -6,15 +6,15 @@ export default function MainIcons ({ container }) {
     return (
         <div className={container}>
             <div className='icon-content'>
-                <a className='icon-1' href='https://www.linkedin.com/in/aurelien-essome-1117941b3/'>
+                <a className='icon-1' href='https://www.linkedin.com/in/aurelien-essome-1117941b3/' target='_blank'>
                     <FaLinkedin size={25} color='rgba(255, 254, 255, 0.5)' />
                 </a>
 
-                <a className='icon-1' href='https://github.com/Relie9828'>
+                <a className='icon-1' href='https://github.com/Relie9828' target='_blank'>
                     <DiGithubBadge size={30} color='rgba(255, 254, 255, 0.5)' />
                 </a>
                 
-                <a className='icon-1' href='https://stackoverflow.com/users/16262518/relie-essom'>
+                <a className='icon-1' href='https://stackoverflow.com/users/16262518/relie-essom' target='_blank'>
                     <FaStackOverflow size={25} color='rgba(255, 254, 255, 0.5)' />
                 </a>
             </div>
