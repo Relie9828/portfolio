@@ -1,9 +1,9 @@
-import image1 from '../images/thumbs/01.jpg';
-import image2 from '../images/thumbs/02.jpg';
-import image3 from '../images/thumbs/03.jpg';
-import image4 from '../images/thumbs/04.jpg';
-import image5 from '../images/thumbs/05.jpg';
-import image6 from '../images/thumbs/06.jpg';
+import image1 from '../images/washe.svg';
+import image2 from '../images/fomo.svg';
+import image3 from '../images/ride.svg';
+import image4 from '../images/weather.svg';
+import image5 from '../images/calcule.svg';
+import image6 from '../images/notes.svg';
 
 export const data = [
     {
@@ -34,7 +34,7 @@ export const data = [
         title: 'Ride',
         image:`${image3}`,
         body: [{
-            description: 'An innovative app that elevates the cycling experience, Ride combines real-time navigation, community engagement, and performance analytics. With the unique addition of in-app access to certified bike technicians for maintenance needs, Ride ensures consistently safe and smooth journeys. More than just an app, Ride stands as a powerful companion for cyclists aiming to explore, ride with confidence, and immerse themselves within a dynamic cycling community.'
+            description: 'Ride is an innovative app that elevates the cycling experience, it combines real-time navigation, community engagement, and performance analytics. With the unique addition of in-app access to certified bike technicians for maintenance needs, Ride ensures consistently safe and smooth journeys. More than just an app, Ride stands as a powerful companion for cyclists aiming to explore, ride with confidence, and immerse themselves within a dynamic cycling community.'
         }],
         status: `Under development`,
         inBeta: false

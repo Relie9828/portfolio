@@ -34,9 +34,9 @@ export default function ImageModal ({ toggleModal, showNext, showPrevious, selec
                                     {selectedDescription}
                                 </text>
 
-                                <div onClick={() => alert('clicked')} className='modal-image-button'>
+                                {/* <div onClick={() => alert('clicked')} className='modal-image-button'>
                                     View
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

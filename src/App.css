@@ -579,6 +579,7 @@
     background-color: rgba(0, 0, 0, 0.7);
     height: 25rem;
     transition: .3s ease-in-out;
+    object-fit: cover;
   }
 
   .modal-image-overlay{
@@ -638,6 +639,7 @@
 
   .modal-image-text {
     padding: 15px;
+    font-weight: 600;
     text-align: left;
     font-size: 13px;
     margin-bottom: 5px;
