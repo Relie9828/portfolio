@@ -1,20 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.72a7c68c.css",
-    "main.js": "/static/js/main.391cd133.js",
+    "main.css": "/static/css/main.d5f7fb4f.css",
+    "main.js": "/static/js/main.fa8ff328.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/avatars.PNG": "/static/media/avatars.fc2ebcfbc31e490d18d4.PNG",
+    "static/media/deck.pdf": "/static/media/deck.e2c3ba84a6405adb55d8.pdf",
     "static/media/woods.jpg": "/static/media/woods.7a1457ffc52a762eaa33.jpg",
     "static/media/valley.jpg": "/static/media/valley.8e4916a0f687c5161f69.jpg",
     "static/media/mountains.jpg": "/static/media/mountains.d55ba1b95d62564f6596.jpg",
     "static/media/expo-logo.png": "/static/media/expo-logo.573c3177dd4267db299a.png",
+    "static/media/washe.svg": "/static/media/washe.152dc89d2e928cee0ac1d87f4884bb26.svg",
+    "static/media/fomo.svg": "/static/media/fomo.fc1f578de4f4ff657c82e9749708c1f5.svg",
+    "static/media/ride.svg": "/static/media/ride.6f626084e080f6c9bb650c29ab6b224c.svg",
+    "static/media/weather.svg": "/static/media/weather.1b706bb894e2958ffe2bc639cfd14c8c.svg",
+    "static/media/calcule.svg": "/static/media/calcule.e0a3e865c62f2eeac18ef21afd8fd354.svg",
     "index.html": "/index.html",
-    "main.72a7c68c.css.map": "/static/css/main.72a7c68c.css.map",
-    "main.391cd133.js.map": "/static/js/main.391cd133.js.map",
+    "static/media/notes.svg": "/static/media/notes.8ff3503a821a3587929565f034c97683.svg",
+    "main.d5f7fb4f.css.map": "/static/css/main.d5f7fb4f.css.map",
+    "main.fa8ff328.js.map": "/static/js/main.fa8ff328.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.72a7c68c.css",
-    "static/js/main.391cd133.js"
+    "static/css/main.d5f7fb4f.css",
+    "static/js/main.fa8ff328.js"
   ]
 }
