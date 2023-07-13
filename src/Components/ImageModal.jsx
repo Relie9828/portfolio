@@ -1,6 +1,5 @@
 import React, {useCallback, useState, useContext, useEffect, useRef} from 'react';
 import { IoIosArrowForward, IoIosArrowBack, IoIosClose } from "react-icons/io";
-import { data } from '../assets/data';
 
 export default function ImageModal ({ toggleModal, showNext, showPrevious, selectedImage, selectedDescription, selectedStatus }) {
     return (
