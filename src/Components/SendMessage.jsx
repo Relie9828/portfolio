@@ -50,7 +50,8 @@ export default function SendMessage ({ props }) {
                                 <div className='icon-2'>
                                     <MdEmail size={25} color='#D0D0D1' />
                                 </div>
-                                <a className='email' href='#'>aubessome98@gmail.com</a>
+                                
+                                <a className='email'>aubessome98@gmail.com</a>
                             </div>
                         </div>
                     </div>

@@ -55,9 +55,9 @@ export default function App ({ props }) {
                     }} 
                     pluginRenderers={DocViewerRenderers}/>
 
-                    <button className='close-resume' onClick={toggleResume}>
+                    <div className='close-resume' onClick={toggleResume}>
                         CLOSE
-                    </button>
+                    </div>
                 </div>
             }
 
