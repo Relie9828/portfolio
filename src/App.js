@@ -34,7 +34,7 @@ export default function App ({ props }) {
     };
 
     const docs = [
-        { uri: require("./assets/deck.pdf") }, // Local File
+        { uri: require("./assets/MyResume.pdf") }, // Local File
     ];
     
     return (
